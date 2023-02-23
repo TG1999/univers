@@ -8,7 +8,6 @@
 # See https://github.com/nexB/skeleton for support or download.
 # See https://aboutcode.org for more information about nexB OSS projects.
 #
-from collections import defaultdict
 import email
 import itertools
 import os
@@ -18,20 +17,20 @@ import subprocess
 import tempfile
 import time
 import urllib
+from collections import defaultdict
+from urllib.parse import quote_plus
 
 import attr
 import license_expression
 import packageurl
 import requests
 import saneyaml
+import utils_pip_compatibility_tags
 from commoncode import fileutils
 from commoncode.hash import multi_checksums
 from commoncode.text import python_safe_name
 from packaging import tags as packaging_tags
 from packaging import version as packaging_version
-from urllib.parse import quote_plus
-
-import utils_pip_compatibility_tags
 from utils_requirements import load_requirements
 
 """

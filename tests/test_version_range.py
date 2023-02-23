@@ -10,27 +10,23 @@ from unittest import TestCase
 import pytest
 
 from univers.version_constraint import VersionConstraint
-from univers.version_range import (
-    RANGE_CLASS_BY_SCHEMES,
-    ConanVersionRange,
-    GemVersionRange,
-    InvalidVersionRange,
-    MattermostVersionRange,
-    NpmVersionRange,
-    NugetVersionRange,
-    OpensslVersionRange,
-    PypiVersionRange,
-    VersionRange,
-    from_gitlab_native,
-)
-from univers.versions import (
-    InvalidVersion,
-    NugetVersion,
-    OpensslVersion,
-    PypiVersion,
-    RubygemsVersion,
-    SemverVersion,
-)
+from univers.version_range import RANGE_CLASS_BY_SCHEMES
+from univers.version_range import ConanVersionRange
+from univers.version_range import GemVersionRange
+from univers.version_range import InvalidVersionRange
+from univers.version_range import MattermostVersionRange
+from univers.version_range import NpmVersionRange
+from univers.version_range import NugetVersionRange
+from univers.version_range import OpensslVersionRange
+from univers.version_range import PypiVersionRange
+from univers.version_range import VersionRange
+from univers.version_range import from_gitlab_native
+from univers.versions import InvalidVersion
+from univers.versions import NugetVersion
+from univers.versions import OpensslVersion
+from univers.versions import PypiVersion
+from univers.versions import RubygemsVersion
+from univers.versions import SemverVersion
 
 
 class TestVersionRange(TestCase):
